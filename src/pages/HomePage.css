@@ -1,0 +1,55 @@
+/* Homepage */
+.home-page {
+    background-color: #004d00;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .course-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .course-title {
+    margin-right: 1rem; 
+  }
+  
+  .course-credits {
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  .course-description {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .course-summary {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  
+  .course-item:hover {
+    background-color: #e3f2e1; 
+  }
+  
+  .course-item:active {
+    background-color: #c8e6c9;
+  }
+  

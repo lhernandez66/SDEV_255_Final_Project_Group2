@@ -1,0 +1,58 @@
+/* Nav*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  color: #004d00; 
+}
+
+nav {
+  background-color: #004d00;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 150px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 2.5rem;
+}
+
+.title {
+  color: #004d00;
+  text-align: center; /* optional if you also want it centered */
+}
+
