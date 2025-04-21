@@ -67,7 +67,7 @@ function StudentPage() {
 
       <h2 style={{ textAlign: 'center' }}>Your Courses</h2>
       {studentCourses.length === 0 ? (
-        <p>You haven't added any courses yet.</p>
+        <p style={{ textAlign: 'center' }}>You haven't added any courses yet.</p>
       ) : (
         <ul>
           {studentCourses.map((course) => (
@@ -80,7 +80,8 @@ function StudentPage() {
         </ul>
       )}
 
-      <button style={{ marginTop: '20px' }} onClick={goToCart}>
+      
+      <button style={{ marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto',}} onClick={goToCart}>
         Go to Cart
       </button>
     </div>
