@@ -41,6 +41,7 @@ function StudentPage() {
   const addCourse = (course) => {
     if (!studentCourses.find((c) => c.id === course.id)) {
       setStudentCourses([...studentCourses, course]);
+      alert(`The course you added is: ${course.id} !`)
     }
   };
 
