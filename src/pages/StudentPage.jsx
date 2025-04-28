@@ -61,7 +61,7 @@ function StudentPage() {
           <li key={course.id}>
             <strong>{course.name}</strong> - {course.credits} credits
             <br />
-            <button onClick={() => addCourse(course)}>Add Course</button>
+            <button onClick={() => addCourse(course)}>Add the Course</button>
           </li>
         ))}
       </ul>
