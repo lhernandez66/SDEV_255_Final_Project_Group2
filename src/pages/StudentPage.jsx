@@ -1,24 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const StudentPage = ({ addCourse }) => {
-  const [availableCourses, setAvailableCourses] = useState([]);
-
-<<<<<<< HEAD
-  useEffect(() => {
-    fetch('https://webappfinal.glitch.me/courses') // Replace with your Glitch app URL
-      .then((response) => response.json())
-      .then((data) => setAvailableCourses(data))
-      .catch((error) => console.error('Error fetching courses:', error));
-  }, []);
-=======
 function StudentPage() {
+  const [availableCourses, setAvailableCourses] = useState([]);
   const [studentCourses, setStudentCourses] = useState([]);
   const navigate = useNavigate();
 
   const addCourse = (course) => {
     if (!studentCourses.find((c) => c.id === course.id)) {
       setStudentCourses([...studentCourses, course]);
-      alert(`The course you added is: ${course.id} !`)
+      alert(`The course you added is: ${course.id} !`);
     }
   };
 
@@ -29,7 +20,6 @@ function StudentPage() {
   const goToCart = () => {
     navigate('/cart', { state: { selectedCourses: studentCourses } });
   };
->>>>>>> 33d036be7bb27c6f9417775184db8e7a252d1985
 
   return (
     <div className="student-page">
@@ -45,6 +35,6 @@ function StudentPage() {
       </ul>
     </div>
   );
-};
+}
 
 export default StudentPage;
