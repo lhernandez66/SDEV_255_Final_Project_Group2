@@ -38,12 +38,8 @@ function StudentPage() {
         {availableCourses.map((course) => (
           <li key={course._id}>
             <strong>{course.name}</strong> - {course.credits} credits
-<<<<<<< HEAD
-            <button onClick={() => addCourse(course)}>Add Course</button>
-=======
             <br />
             <button onClick={() => addCourse(course)}>Add the Course</button>
->>>>>>> 33d036be7bb27c6f9417775184db8e7a252d1985
           </li>
         ))}
       </ul>
