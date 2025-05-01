@@ -1,0 +1,43 @@
+.teacher-page {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f2f2f2;
+    border-radius: 6px;
+    font-family: sans-serif;
+    box-sizing: border-box; /* Ensures padding stays inside */
+  }
+  
+  .course-form * {
+    box-sizing: border-box; /* Applies to inputs, labels, etc. */
+  }
+  
+  .teacher-page h2 {
+    text-align: center;
+    color: #2d5d34; /* Dark green */
+  }
+  
+  .course-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .course-form input,
+  .course-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .course-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2d5d34; /* Dark green */
+    color: white;
+    border: none;
+    border-radius
+  }

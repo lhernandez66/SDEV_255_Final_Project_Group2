@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 
@@ -20,16 +21,34 @@ function Navbar() {
 }
 
 function App() {
+  const [studentCourses, setStudentCourses] = useState([]);
+
+  const addCourse = (course) => {
+    if (!studentCourses.find((c) => c._id === course._id)) {
+      setStudentCourses([...studentCourses, course]);
+    }
+  };
+
+  const dropCourse = (id) => {
+    setStudentCourses(studentCourses.filter((course) => course._id !== id));
+  };
+
   return (
     <Router>
       <div>
-      <h1 className="title">Course Tracker</h1>
+        <h1 className="title">Course Tracker</h1>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/teacher" element={<TeacherPage />} />
-          <Route path="/student" element={<StudentPage />} />
-          <Route path="/cart" element={<CartPage />} />
+          <Route
+            path="/student"
+            element={<StudentPage addCourse={addCourse} />}
+          />
+          <Route
+            path="/cart"
+            element={<CartPage studentCourses={studentCourses} dropCourse={dropCourse} />}
+          />
         </Routes>
       </div>
     </Router>
@@ -37,3 +56,4 @@ function App() {
 }
 
 export default App;
+
