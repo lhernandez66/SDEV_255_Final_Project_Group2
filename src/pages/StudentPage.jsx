@@ -20,18 +20,13 @@ const StudentPage = ({ studentCourses, setStudentCourses }) => {
       alert("Course already added.");
     }
   };
-
-  const dropCourse = (id) => {
-    setStudentCourses(studentCourses.filter((course) => course.id !== id));
-  };
-
   const goToCart = () => {
     navigate('/cart', { state: { selectedCourses: studentCourses } });
   };
 
   return (
     <div className="student-page">
-      <h2>Available Courses</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Available Courses</h2>
       <ul>
         {availableCourses.map((course) => (
           <li key={course._id}>
@@ -41,7 +36,7 @@ const StudentPage = ({ studentCourses, setStudentCourses }) => {
           </li>
         ))}
       </ul>
-      <button onClick={goToCart}>Go to Cart</button>
+      <button onClick={goToCart} style={{ display: 'block', margin: '20px auto' }}>Go to Cart</button>
     </div>
   );
 };

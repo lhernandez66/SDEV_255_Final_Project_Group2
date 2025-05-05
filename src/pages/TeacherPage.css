@@ -5,16 +5,16 @@
     background: #f2f2f2;
     border-radius: 6px;
     font-family: sans-serif;
-    box-sizing: border-box; /* Ensures padding stays inside */
+    box-sizing: border-box; 
   }
   
   .course-form * {
-    box-sizing: border-box; /* Applies to inputs, labels, etc. */
+    box-sizing: border-box; 
   }
   
   .teacher-page h2 {
     text-align: center;
-    color: #2d5d34; /* Dark green */
+    color: #2d5d34; 
   }
   
   .course-form label {
@@ -36,7 +36,7 @@
   .course-form button {
     width: 100%;
     padding: 10px;
-    background-color: #2d5d34; /* Dark green */
+    background-color: #2d5d34; 
     color: white;
     border: none;
     border-radius
